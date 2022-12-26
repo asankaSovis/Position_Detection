@@ -1,0 +1,11 @@
+C:\Users\akash\Documents\Visual Studio 2022\Projects\Position_Detection\Position_Detection\bin\Debug\Position_Detection.exe.config
+C:\Users\akash\Documents\Visual Studio 2022\Projects\Position_Detection\Position_Detection\bin\Debug\Position_Detection.exe
+C:\Users\akash\Documents\Visual Studio 2022\Projects\Position_Detection\Position_Detection\bin\Debug\Position_Detection.pdb
+C:\Users\akash\Documents\Visual Studio 2022\Projects\Position_Detection\Position_Detection\obj\Debug\Position_Detection.csproj.AssemblyReference.cache
+C:\Users\akash\Documents\Visual Studio 2022\Projects\Position_Detection\Position_Detection\obj\Debug\Position_Detection.csproj.SuggestedBindingRedirects.cache
+C:\Users\akash\Documents\Visual Studio 2022\Projects\Position_Detection\Position_Detection\obj\Debug\Position_Detection.frmMain.resources
+C:\Users\akash\Documents\Visual Studio 2022\Projects\Position_Detection\Position_Detection\obj\Debug\Position_Detection.Properties.Resources.resources
+C:\Users\akash\Documents\Visual Studio 2022\Projects\Position_Detection\Position_Detection\obj\Debug\Position_Detection.csproj.GenerateResource.cache
+C:\Users\akash\Documents\Visual Studio 2022\Projects\Position_Detection\Position_Detection\obj\Debug\Position_Detection.csproj.CoreCompileInputs.cache
+C:\Users\akash\Documents\Visual Studio 2022\Projects\Position_Detection\Position_Detection\obj\Debug\Position_Detection.exe
+C:\Users\akash\Documents\Visual Studio 2022\Projects\Position_Detection\Position_Detection\obj\Debug\Position_Detection.pdb

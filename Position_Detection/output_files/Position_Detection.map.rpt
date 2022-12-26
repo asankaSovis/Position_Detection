@@ -1,0 +1,498 @@
+Analysis & Synthesis report for Position_Detection
+Sun Dec 25 18:12:07 2022
+Quartus Prime Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. User-Specified and Inferred Latches
+  9. Registers Removed During Synthesis
+ 10. General Register Statistics
+ 11. Inverted Register Statistics
+ 12. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 13. Port Connectivity Checks: "UART_Reciever:module4"
+ 14. Port Connectivity Checks: "analog_2_digital:module3"
+ 15. Port Connectivity Checks: "ADC_Read:module1|ADC_signalling:module1"
+ 16. Post-Synthesis Netlist Statistics for Top Partition
+ 17. Elapsed Time Per Partition
+ 18. Analysis & Synthesis Messages
+ 19. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2022  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Sun Dec 25 18:12:07 2022       ;
+; Quartus Prime Version              ; 21.1.1 Build 850 06/23/2022 SJ Lite Edition ;
+; Revision Name                      ; Position_Detection                          ;
+; Top-level Entity Name              ; Position_Detection                          ;
+; Family                             ; Cyclone IV E                                ;
+; Total logic elements               ; 494                                         ;
+;     Total combinational functions  ; 418                                         ;
+;     Dedicated logic registers      ; 230                                         ;
+; Total registers                    ; 230                                         ;
+; Total pins                         ; 7                                           ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; EP4CE22F17C6       ;                    ;
+; Top-level entity name                                            ; Position_Detection ; Position_Detection ;
+; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; DSP Block Balancing                                              ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto ROM Replacement                                             ; On                 ; On                 ;
+; Auto RAM Replacement                                             ; On                 ; On                 ;
+; Auto DSP Block Replacement                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Strict RAM Replacement                                           ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto RAM Block Balancing                                         ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Timing-Driven Synthesis                                          ; On                 ; On                 ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; SDC constraint protection                                        ; Off                ; Off                ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processors 3-4         ;   0.0%      ;
++----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                             ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                               ; Library ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------+---------+
+; Position_Detection.v             ; yes             ; User Verilog HDL File  ; C:/quartus/project/Position_Detection/Position_Detection.v ;         ;
+; Data_Comm.v                      ; yes             ; User Verilog HDL File  ; C:/quartus/project/Position_Detection/Data_Comm.v          ;         ;
+; UART_Reciever.v                  ; yes             ; User Verilog HDL File  ; C:/quartus/project/Position_Detection/UART_Reciever.v      ;         ;
+; ADC_Read.v                       ; yes             ; User Verilog HDL File  ; C:/quartus/project/Position_Detection/ADC_Read.v           ;         ;
+; UART_Transmitter.v               ; yes             ; User Verilog HDL File  ; C:/quartus/project/Position_Detection/UART_Transmitter.v   ;         ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------+---------+
+
+
++-------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                 ;
++---------------------------------------------+---------------+
+; Resource                                    ; Usage         ;
++---------------------------------------------+---------------+
+; Estimated Total logic elements              ; 494           ;
+;                                             ;               ;
+; Total combinational functions               ; 418           ;
+; Logic element usage by number of LUT inputs ;               ;
+;     -- 4 input functions                    ; 121           ;
+;     -- 3 input functions                    ; 160           ;
+;     -- <=2 input functions                  ; 137           ;
+;                                             ;               ;
+; Logic elements by mode                      ;               ;
+;     -- normal mode                          ; 229           ;
+;     -- arithmetic mode                      ; 189           ;
+;                                             ;               ;
+; Total registers                             ; 230           ;
+;     -- Dedicated logic registers            ; 230           ;
+;     -- I/O registers                        ; 0             ;
+;                                             ;               ;
+; I/O pins                                    ; 7             ;
+;                                             ;               ;
+; Embedded Multiplier 9-bit elements          ; 0             ;
+;                                             ;               ;
+; Maximum fan-out node                        ; int_clk~input ;
+; Maximum fan-out                             ; 110           ;
+; Total fan-out                               ; 1886          ;
+; Average fan-out                             ; 2.85          ;
++---------------------------------------------+---------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                ;
++---------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------+--------------------+--------------+
+; Compilation Hierarchy Node      ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                               ; Entity Name        ; Library Name ;
++---------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------+--------------------+--------------+
+; |Position_Detection             ; 418 (1)             ; 230 (0)                   ; 0           ; 0            ; 0       ; 0         ; 7    ; 0            ; |Position_Detection                                               ; Position_Detection ; work         ;
+;    |ADC_Read:module1|           ; 45 (0)              ; 45 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Position_Detection|ADC_Read:module1                              ; ADC_Read           ; work         ;
+;       |ADC_signalling:module1|  ; 29 (29)             ; 28 (28)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Position_Detection|ADC_Read:module1|ADC_signalling:module1       ; ADC_signalling     ; work         ;
+;       |rec_clock:module2|       ; 16 (16)             ; 17 (17)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Position_Detection|ADC_Read:module1|rec_clock:module2            ; rec_clock          ; work         ;
+;    |UART_Reciever:module4|      ; 68 (0)              ; 56 (1)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Position_Detection|UART_Reciever:module4                         ; UART_Reciever      ; work         ;
+;       |bit_counter_rx:module2|  ; 5 (5)               ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Position_Detection|UART_Reciever:module4|bit_counter_rx:module2  ; bit_counter_rx     ; work         ;
+;       |data_trigger:module4|    ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Position_Detection|UART_Reciever:module4|data_trigger:module4    ; data_trigger       ; work         ;
+;       |recieve_trigger:module5| ; 10 (10)             ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Position_Detection|UART_Reciever:module4|recieve_trigger:module5 ; recieve_trigger    ; work         ;
+;       |reciever:module3|        ; 17 (17)             ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Position_Detection|UART_Reciever:module4|reciever:module3        ; reciever           ; work         ;
+;       |rx_clock:module1|        ; 36 (36)             ; 27 (27)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Position_Detection|UART_Reciever:module4|rx_clock:module1        ; rx_clock           ; work         ;
+;    |UART_Transmitter:module2|   ; 63 (16)             ; 33 (1)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Position_Detection|UART_Transmitter:module2                      ; UART_Transmitter   ; work         ;
+;       |bit_counter:module2|     ; 5 (5)               ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Position_Detection|UART_Transmitter:module2|bit_counter:module2  ; bit_counter        ; work         ;
+;       |transmitter:module3|     ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Position_Detection|UART_Transmitter:module2|transmitter:module3  ; transmitter        ; work         ;
+;       |tx_clock:module1|        ; 36 (36)             ; 27 (27)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Position_Detection|UART_Transmitter:module2|tx_clock:module1     ; tx_clock           ; work         ;
+;    |analog_2_digital:module3|   ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Position_Detection|analog_2_digital:module3                      ; analog_2_digital   ; work         ;
+;    |data_comm:module5|          ; 240 (149)           ; 95 (15)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Position_Detection|data_comm:module5                             ; data_comm          ; work         ;
+;       |comm_clock:comb_4|       ; 83 (83)             ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Position_Detection|data_comm:module5|comm_clock:comb_4           ; comm_clock         ; work         ;
+;       |read_intensity:comb_3|   ; 8 (8)               ; 48 (48)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Position_Detection|data_comm:module5|read_intensity:comb_3       ; read_intensity     ; work         ;
++---------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------+--------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                                    ;
++----------------------------------------------------+------------------------------------------+------------------------+
+; Latch Name                                         ; Latch Enable Signal                      ; Free of Timing Hazards ;
++----------------------------------------------------+------------------------------------------+------------------------+
+; UART_Transmitter:module2|data[0]                   ; data_comm:module5|comm_clock:comb_4|send ; yes                    ;
+; UART_Transmitter:module2|data[1]                   ; data_comm:module5|comm_clock:comb_4|send ; yes                    ;
+; UART_Transmitter:module2|data[4]                   ; data_comm:module5|comm_clock:comb_4|send ; yes                    ;
+; UART_Transmitter:module2|data[3]                   ; data_comm:module5|comm_clock:comb_4|send ; yes                    ;
+; UART_Transmitter:module2|data[2]                   ; data_comm:module5|comm_clock:comb_4|send ; yes                    ;
+; UART_Transmitter:module2|data[5]                   ; data_comm:module5|comm_clock:comb_4|send ; yes                    ;
+; UART_Transmitter:module2|data[6]                   ; data_comm:module5|comm_clock:comb_4|send ; yes                    ;
+; UART_Transmitter:module2|data[7]                   ; data_comm:module5|comm_clock:comb_4|send ; yes                    ;
+; Number of user-specified and inferred latches = 8  ;                                          ;                        ;
++----------------------------------------------------+------------------------------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++--------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                             ;
++---------------------------------------+----------------------------------------+
+; Register name                         ; Reason for Removal                     ;
++---------------------------------------+----------------------------------------+
+; data_comm:module5|data1[7]            ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 1 ;                                        ;
++---------------------------------------+----------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 230   ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 52    ;
+; Number of registers using Asynchronous Clear ; 3     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 83    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++----------------------------------------------------------------+
+; Inverted Register Statistics                                   ;
++------------------------------------------------------+---------+
+; Inverted Register                                    ; Fan out ;
++------------------------------------------------------+---------+
+; UART_Transmitter:module2|state                       ; 7       ;
+; ADC_Read:module1|ADC_signalling:module1|counter[0]   ; 17      ;
+; ADC_Read:module1|ADC_signalling:module1|counter[3]   ; 14      ;
+; ADC_Read:module1|ADC_signalling:module1|counter[1]   ; 16      ;
+; UART_Reciever:module4|recieve_trigger:module5|end_rx ; 6       ;
+; UART_Reciever:module4|state                          ; 10      ;
+; Total number of inverted registers = 6               ;         ;
++------------------------------------------------------+---------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------+
+; 3:1                ; 26 bits   ; 52 LEs        ; 52 LEs               ; 0 LEs                  ; Yes        ; |Position_Detection|UART_Transmitter:module2|tx_clock:module1|counter[6]             ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |Position_Detection|UART_Reciever:module4|recieve_trigger:module5|trigger_counter[3] ;
+; 3:1                ; 26 bits   ; 52 LEs        ; 52 LEs               ; 0 LEs                  ; Yes        ; |Position_Detection|UART_Reciever:module4|rx_clock:module1|counter[8]                ;
+; 8:1                ; 9 bits    ; 45 LEs        ; 27 LEs               ; 18 LEs                 ; Yes        ; |Position_Detection|data_comm:module5|data1[4]                                       ;
+; 6:1                ; 3 bits    ; 12 LEs        ; 9 LEs                ; 3 LEs                  ; Yes        ; |Position_Detection|data_comm:module5|comm_clock:comb_4|send_id[0]                   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "UART_Reciever:module4"                                                                          ;
++------------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port             ; Type   ; Severity ; Details                                                                             ;
++------------------+--------+----------+-------------------------------------------------------------------------------------+
+; rx_speed[18..17] ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; rx_speed[8..7]   ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; rx_speed[25..22] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; rx_speed[20..19] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; rx_speed[16..14] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; rx_speed[12..11] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; rx_speed[4..0]   ; Input  ; Info     ; Stuck at GND                                                                        ;
+; rx_speed[21]     ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; rx_speed[13]     ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; rx_speed[10]     ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; rx_speed[9]      ; Input  ; Info     ; Stuck at GND                                                                        ;
+; rx_speed[6]      ; Input  ; Info     ; Stuck at GND                                                                        ;
+; rx_speed[5]      ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; bit_ID           ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; rx_clk           ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------+
+; Port Connectivity Checks: "analog_2_digital:module3" ;
++------------------+-------+----------+----------------+
+; Port             ; Type  ; Severity ; Details        ;
++------------------+-------+----------+----------------+
+; threshold[8..0]  ; Input ; Info     ; Stuck at VCC   ;
+; threshold[11..9] ; Input ; Info     ; Stuck at GND   ;
++------------------+-------+----------+----------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ADC_Read:module1|ADC_signalling:module1"                                                                                                                ;
++-----------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                             ;
++-----------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; threshold ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (12 bits) it drives.  Extra input bit(s) "threshold[11..1]" will be connected to GND. ;
++-----------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 7                           ;
+; cycloneiii_ff         ; 230                         ;
+;     CLR               ; 3                           ;
+;     ENA               ; 83                          ;
+;     SLD               ; 52                          ;
+;     plain             ; 92                          ;
+; cycloneiii_lcell_comb ; 418                         ;
+;     arith             ; 189                         ;
+;         2 data inputs ; 89                          ;
+;         3 data inputs ; 100                         ;
+;     normal            ; 229                         ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 7                           ;
+;         2 data inputs ; 40                          ;
+;         3 data inputs ; 60                          ;
+;         4 data inputs ; 121                         ;
+;                       ;                             ;
+; Max LUT depth         ; 7.00                        ;
+; Average LUT depth     ; 3.26                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
+    Info: Processing started: Sun Dec 25 18:11:55 2022
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Position_Detection -c Position_Detection
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file position_detection.v
+    Info (12023): Found entity 1: Position_Detection File: C:/quartus/project/Position_Detection/Position_Detection.v Line: 1
+Info (12021): Found 3 design units, including 3 entities, in source file data_comm.v
+    Info (12023): Found entity 1: data_comm File: C:/quartus/project/Position_Detection/Data_Comm.v Line: 1
+    Info (12023): Found entity 2: read_intensity File: C:/quartus/project/Position_Detection/Data_Comm.v Line: 59
+    Info (12023): Found entity 3: comm_clock File: C:/quartus/project/Position_Detection/Data_Comm.v Line: 86
+Info (12021): Found 6 design units, including 6 entities, in source file uart_reciever.v
+    Info (12023): Found entity 1: UART_Reciever File: C:/quartus/project/Position_Detection/UART_Reciever.v Line: 1
+    Info (12023): Found entity 2: recieve_trigger File: C:/quartus/project/Position_Detection/UART_Reciever.v Line: 38
+    Info (12023): Found entity 3: reciever File: C:/quartus/project/Position_Detection/UART_Reciever.v Line: 71
+    Info (12023): Found entity 4: bit_counter_rx File: C:/quartus/project/Position_Detection/UART_Reciever.v Line: 96
+    Info (12023): Found entity 5: rx_clock File: C:/quartus/project/Position_Detection/UART_Reciever.v Line: 120
+    Info (12023): Found entity 6: data_trigger File: C:/quartus/project/Position_Detection/UART_Reciever.v Line: 151
+Info (12021): Found 4 design units, including 4 entities, in source file adc_read.v
+    Info (12023): Found entity 1: ADC_Read File: C:/quartus/project/Position_Detection/ADC_Read.v Line: 1
+    Info (12023): Found entity 2: ADC_signalling File: C:/quartus/project/Position_Detection/ADC_Read.v Line: 15
+    Info (12023): Found entity 3: rec_clock File: C:/quartus/project/Position_Detection/ADC_Read.v Line: 55
+    Info (12023): Found entity 4: analog_2_digital File: C:/quartus/project/Position_Detection/ADC_Read.v Line: 75
+Info (12021): Found 5 design units, including 5 entities, in source file uart_transmitter.v
+    Info (12023): Found entity 1: UART_Transmitter File: C:/quartus/project/Position_Detection/UART_Transmitter.v Line: 1
+    Info (12023): Found entity 2: transmitter File: C:/quartus/project/Position_Detection/UART_Transmitter.v Line: 45
+    Info (12023): Found entity 3: bit_counter File: C:/quartus/project/Position_Detection/UART_Transmitter.v Line: 61
+    Info (12023): Found entity 4: tx_clock File: C:/quartus/project/Position_Detection/UART_Transmitter.v Line: 85
+    Info (12023): Found entity 5: timed_trigger File: C:/quartus/project/Position_Detection/UART_Transmitter.v Line: 117
+Warning (10236): Verilog HDL Implicit Net warning at Position_Detection.v(19): created implicit net for "send" File: C:/quartus/project/Position_Detection/Position_Detection.v Line: 19
+Warning (10236): Verilog HDL Implicit Net warning at Position_Detection.v(19): created implicit net for "trigger_id" File: C:/quartus/project/Position_Detection/Position_Detection.v Line: 19
+Warning (10236): Verilog HDL Implicit Net warning at Position_Detection.v(21): created implicit net for "ext_trigger" File: C:/quartus/project/Position_Detection/Position_Detection.v Line: 21
+Warning (10236): Verilog HDL Implicit Net warning at Position_Detection.v(21): created implicit net for "bit_ID" File: C:/quartus/project/Position_Detection/Position_Detection.v Line: 21
+Warning (10236): Verilog HDL Implicit Net warning at Position_Detection.v(21): created implicit net for "rx_clk" File: C:/quartus/project/Position_Detection/Position_Detection.v Line: 21
+Warning (10236): Verilog HDL Implicit Net warning at UART_Reciever.v(20): created implicit net for "enable" File: C:/quartus/project/Position_Detection/UART_Reciever.v Line: 20
+Warning (10236): Verilog HDL Implicit Net warning at ADC_Read.v(7): created implicit net for "threshold" File: C:/quartus/project/Position_Detection/ADC_Read.v Line: 7
+Warning (10236): Verilog HDL Implicit Net warning at UART_Transmitter.v(19): created implicit net for "tx_clk" File: C:/quartus/project/Position_Detection/UART_Transmitter.v Line: 19
+Warning (10236): Verilog HDL Implicit Net warning at UART_Transmitter.v(20): created implicit net for "enable" File: C:/quartus/project/Position_Detection/UART_Transmitter.v Line: 20
+Critical Warning (10846): Verilog HDL Instantiation warning at Data_Comm.v(20): instance has no name File: C:/quartus/project/Position_Detection/Data_Comm.v Line: 20
+Critical Warning (10846): Verilog HDL Instantiation warning at Data_Comm.v(21): instance has no name File: C:/quartus/project/Position_Detection/Data_Comm.v Line: 21
+Info (12127): Elaborating entity "Position_Detection" for the top level hierarchy
+Info (12128): Elaborating entity "ADC_Read" for hierarchy "ADC_Read:module1" File: C:/quartus/project/Position_Detection/Position_Detection.v Line: 18
+Info (12128): Elaborating entity "ADC_signalling" for hierarchy "ADC_Read:module1|ADC_signalling:module1" File: C:/quartus/project/Position_Detection/ADC_Read.v Line: 7
+Info (12128): Elaborating entity "rec_clock" for hierarchy "ADC_Read:module1|rec_clock:module2" File: C:/quartus/project/Position_Detection/ADC_Read.v Line: 8
+Info (12128): Elaborating entity "UART_Transmitter" for hierarchy "UART_Transmitter:module2" File: C:/quartus/project/Position_Detection/Position_Detection.v Line: 19
+Warning (10240): Verilog HDL Always Construct warning at UART_Transmitter.v(24): inferring latch(es) for variable "data", which holds its previous value in one or more paths through the always construct File: C:/quartus/project/Position_Detection/UART_Transmitter.v Line: 24
+Info (10041): Inferred latch for "data[0]" at UART_Transmitter.v(24) File: C:/quartus/project/Position_Detection/UART_Transmitter.v Line: 24
+Info (10041): Inferred latch for "data[1]" at UART_Transmitter.v(24) File: C:/quartus/project/Position_Detection/UART_Transmitter.v Line: 24
+Info (10041): Inferred latch for "data[2]" at UART_Transmitter.v(24) File: C:/quartus/project/Position_Detection/UART_Transmitter.v Line: 24
+Info (10041): Inferred latch for "data[3]" at UART_Transmitter.v(24) File: C:/quartus/project/Position_Detection/UART_Transmitter.v Line: 24
+Info (10041): Inferred latch for "data[4]" at UART_Transmitter.v(24) File: C:/quartus/project/Position_Detection/UART_Transmitter.v Line: 24
+Info (10041): Inferred latch for "data[5]" at UART_Transmitter.v(24) File: C:/quartus/project/Position_Detection/UART_Transmitter.v Line: 24
+Info (10041): Inferred latch for "data[6]" at UART_Transmitter.v(24) File: C:/quartus/project/Position_Detection/UART_Transmitter.v Line: 24
+Info (10041): Inferred latch for "data[7]" at UART_Transmitter.v(24) File: C:/quartus/project/Position_Detection/UART_Transmitter.v Line: 24
+Info (12128): Elaborating entity "tx_clock" for hierarchy "UART_Transmitter:module2|tx_clock:module1" File: C:/quartus/project/Position_Detection/UART_Transmitter.v Line: 19
+Info (12128): Elaborating entity "bit_counter" for hierarchy "UART_Transmitter:module2|bit_counter:module2" File: C:/quartus/project/Position_Detection/UART_Transmitter.v Line: 20
+Info (12128): Elaborating entity "transmitter" for hierarchy "UART_Transmitter:module2|transmitter:module3" File: C:/quartus/project/Position_Detection/UART_Transmitter.v Line: 21
+Info (12128): Elaborating entity "analog_2_digital" for hierarchy "analog_2_digital:module3" File: C:/quartus/project/Position_Detection/Position_Detection.v Line: 20
+Info (12128): Elaborating entity "UART_Reciever" for hierarchy "UART_Reciever:module4" File: C:/quartus/project/Position_Detection/Position_Detection.v Line: 21
+Info (12128): Elaborating entity "rx_clock" for hierarchy "UART_Reciever:module4|rx_clock:module1" File: C:/quartus/project/Position_Detection/UART_Reciever.v Line: 19
+Info (12128): Elaborating entity "bit_counter_rx" for hierarchy "UART_Reciever:module4|bit_counter_rx:module2" File: C:/quartus/project/Position_Detection/UART_Reciever.v Line: 20
+Info (12128): Elaborating entity "reciever" for hierarchy "UART_Reciever:module4|reciever:module3" File: C:/quartus/project/Position_Detection/UART_Reciever.v Line: 21
+Warning (10230): Verilog HDL assignment warning at UART_Reciever.v(81): truncated value with size 10 to match size of target (8) File: C:/quartus/project/Position_Detection/UART_Reciever.v Line: 81
+Info (12128): Elaborating entity "data_trigger" for hierarchy "UART_Reciever:module4|data_trigger:module4" File: C:/quartus/project/Position_Detection/UART_Reciever.v Line: 22
+Info (12128): Elaborating entity "recieve_trigger" for hierarchy "UART_Reciever:module4|recieve_trigger:module5" File: C:/quartus/project/Position_Detection/UART_Reciever.v Line: 23
+Info (12128): Elaborating entity "data_comm" for hierarchy "data_comm:module5" File: C:/quartus/project/Position_Detection/Position_Detection.v Line: 22
+Info (12128): Elaborating entity "read_intensity" for hierarchy "data_comm:module5|read_intensity:comb_3" File: C:/quartus/project/Position_Detection/Data_Comm.v Line: 20
+Info (12128): Elaborating entity "comm_clock" for hierarchy "data_comm:module5|comm_clock:comb_4" File: C:/quartus/project/Position_Detection/Data_Comm.v Line: 21
+Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (13000): Registers with preset signals will power-up high File: C:/quartus/project/Position_Detection/UART_Transmitter.v Line: 36
+Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "cs" is stuck at GND File: C:/quartus/project/Position_Detection/Position_Detection.v Line: 4
+    Warning (13410): Pin "din" is stuck at GND File: C:/quartus/project/Position_Detection/Position_Detection.v Line: 4
+Info (286030): Timing-Driven Synthesis is running
+Critical Warning (18061): Ignored Power-Up Level option on the following registers
+    Critical Warning (18010): Register UART_Transmitter:module2|state will power up to High File: C:/quartus/project/Position_Detection/UART_Transmitter.v Line: 36
+    Critical Warning (18010): Register UART_Reciever:module4|state will power up to High File: C:/quartus/project/Position_Detection/UART_Reciever.v Line: 29
+Info (144001): Generated suppressed messages file C:/quartus/project/Position_Detection/output_files/Position_Detection.map.smsg
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 510 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 2 input pins
+    Info (21059): Implemented 5 output pins
+    Info (21061): Implemented 503 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 21 warnings
+    Info: Peak virtual memory: 4789 megabytes
+    Info: Processing ended: Sun Dec 25 18:12:07 2022
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:10
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/quartus/project/Position_Detection/output_files/Position_Detection.map.smsg.
+
+

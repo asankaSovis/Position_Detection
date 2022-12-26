@@ -1,0 +1,5 @@
+Warning (10268): Verilog HDL information at Data_Comm.v(115): always construct contains both blocking and non-blocking assignments File: C:/quartus/project/Position_Detection/Data_Comm.v Line: 115
+Warning (10268): Verilog HDL information at ADC_Read.v(25): always construct contains both blocking and non-blocking assignments File: C:/quartus/project/Position_Detection/ADC_Read.v Line: 25
+Warning (10268): Verilog HDL information at ADC_Read.v(66): always construct contains both blocking and non-blocking assignments File: C:/quartus/project/Position_Detection/ADC_Read.v Line: 66
+Warning (10268): Verilog HDL information at UART_Transmitter.v(24): always construct contains both blocking and non-blocking assignments File: C:/quartus/project/Position_Detection/UART_Transmitter.v Line: 24
+Warning (10268): Verilog HDL information at UART_Transmitter.v(130): always construct contains both blocking and non-blocking assignments File: C:/quartus/project/Position_Detection/UART_Transmitter.v Line: 130

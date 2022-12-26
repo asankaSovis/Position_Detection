@@ -1,0 +1,329 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'data_comm:module5|comm_clock:comb_4|send'
+Slack : -3.978
+TNS   : -43.156
+
+Type  : Slow 1200mV 85C Model Setup 'int_clk'
+Slack : -3.344
+TNS   : -232.489
+
+Type  : Slow 1200mV 85C Model Setup 'UART_Reciever:module4|rx_clock:module1|rx_clk'
+Slack : -2.163
+TNS   : -33.851
+
+Type  : Slow 1200mV 85C Model Setup 'UART_Reciever:module4|recieve_trigger:module5|trigger'
+Slack : -2.080
+TNS   : -93.291
+
+Type  : Slow 1200mV 85C Model Setup 'ADC_Read:module1|rec_clock:module2|clk'
+Slack : -1.280
+TNS   : -26.055
+
+Type  : Slow 1200mV 85C Model Setup 'UART_Transmitter:module2|tx_clock:module1|tx_clk'
+Slack : -0.239
+TNS   : -0.445
+
+Type  : Slow 1200mV 85C Model Hold 'UART_Reciever:module4|recieve_trigger:module5|trigger'
+Slack : 0.207
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'int_clk'
+Slack : 0.279
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'ADC_Read:module1|rec_clock:module2|clk'
+Slack : 0.357
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'UART_Reciever:module4|rx_clock:module1|rx_clk'
+Slack : 0.357
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'UART_Transmitter:module2|tx_clock:module1|tx_clk'
+Slack : 0.357
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'data_comm:module5|comm_clock:comb_4|send'
+Slack : 0.573
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'analog_2_digital:module3|digital_data'
+Slack : -2.495
+TNS   : -2.495
+
+Type  : Slow 1200mV 85C Model Recovery 'UART_Transmitter:module2|bit_counter:module2|enable'
+Slack : -1.172
+TNS   : -1.172
+
+Type  : Slow 1200mV 85C Model Recovery 'UART_Reciever:module4|bit_counter_rx:module2|enable'
+Slack : -0.447
+TNS   : -0.447
+
+Type  : Slow 1200mV 85C Model Removal 'UART_Reciever:module4|bit_counter_rx:module2|enable'
+Slack : 1.015
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'UART_Transmitter:module2|bit_counter:module2|enable'
+Slack : 1.409
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'analog_2_digital:module3|digital_data'
+Slack : 3.003
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'int_clk'
+Slack : -3.000
+TNS   : -113.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'UART_Reciever:module4|recieve_trigger:module5|trigger'
+Slack : -1.000
+TNS   : -48.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ADC_Read:module1|rec_clock:module2|clk'
+Slack : -1.000
+TNS   : -28.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'UART_Reciever:module4|rx_clock:module1|rx_clk'
+Slack : -1.000
+TNS   : -21.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'data_comm:module5|comm_clock:comb_4|send'
+Slack : -1.000
+TNS   : -15.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'UART_Transmitter:module2|tx_clock:module1|tx_clk'
+Slack : -1.000
+TNS   : -5.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'UART_Reciever:module4|bit_counter_rx:module2|enable'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'UART_Transmitter:module2|bit_counter:module2|enable'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'analog_2_digital:module3|digital_data'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 0C Model Setup 'data_comm:module5|comm_clock:comb_4|send'
+Slack : -3.515
+TNS   : -37.237
+
+Type  : Slow 1200mV 0C Model Setup 'int_clk'
+Slack : -2.903
+TNS   : -197.213
+
+Type  : Slow 1200mV 0C Model Setup 'UART_Reciever:module4|rx_clock:module1|rx_clk'
+Slack : -1.944
+TNS   : -29.556
+
+Type  : Slow 1200mV 0C Model Setup 'UART_Reciever:module4|recieve_trigger:module5|trigger'
+Slack : -1.758
+TNS   : -79.476
+
+Type  : Slow 1200mV 0C Model Setup 'ADC_Read:module1|rec_clock:module2|clk'
+Slack : -1.028
+TNS   : -20.774
+
+Type  : Slow 1200mV 0C Model Setup 'UART_Transmitter:module2|tx_clock:module1|tx_clk'
+Slack : -0.097
+TNS   : -0.097
+
+Type  : Slow 1200mV 0C Model Hold 'UART_Reciever:module4|recieve_trigger:module5|trigger'
+Slack : 0.192
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'int_clk'
+Slack : 0.286
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'ADC_Read:module1|rec_clock:module2|clk'
+Slack : 0.311
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'UART_Reciever:module4|rx_clock:module1|rx_clk'
+Slack : 0.311
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'UART_Transmitter:module2|tx_clock:module1|tx_clk'
+Slack : 0.311
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'data_comm:module5|comm_clock:comb_4|send'
+Slack : 0.530
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'analog_2_digital:module3|digital_data'
+Slack : -2.194
+TNS   : -2.194
+
+Type  : Slow 1200mV 0C Model Recovery 'UART_Transmitter:module2|bit_counter:module2|enable'
+Slack : -0.994
+TNS   : -0.994
+
+Type  : Slow 1200mV 0C Model Recovery 'UART_Reciever:module4|bit_counter_rx:module2|enable'
+Slack : -0.304
+TNS   : -0.304
+
+Type  : Slow 1200mV 0C Model Removal 'UART_Reciever:module4|bit_counter_rx:module2|enable'
+Slack : 0.931
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'UART_Transmitter:module2|bit_counter:module2|enable'
+Slack : 1.219
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'analog_2_digital:module3|digital_data'
+Slack : 2.751
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'int_clk'
+Slack : -3.000
+TNS   : -113.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'UART_Reciever:module4|recieve_trigger:module5|trigger'
+Slack : -1.000
+TNS   : -48.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ADC_Read:module1|rec_clock:module2|clk'
+Slack : -1.000
+TNS   : -28.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'UART_Reciever:module4|rx_clock:module1|rx_clk'
+Slack : -1.000
+TNS   : -21.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'data_comm:module5|comm_clock:comb_4|send'
+Slack : -1.000
+TNS   : -15.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'UART_Transmitter:module2|tx_clock:module1|tx_clk'
+Slack : -1.000
+TNS   : -5.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'UART_Reciever:module4|bit_counter_rx:module2|enable'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'UART_Transmitter:module2|bit_counter:module2|enable'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'analog_2_digital:module3|digital_data'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Setup 'data_comm:module5|comm_clock:comb_4|send'
+Slack : -1.884
+TNS   : -17.567
+
+Type  : Fast 1200mV 0C Model Setup 'int_clk'
+Slack : -1.525
+TNS   : -85.268
+
+Type  : Fast 1200mV 0C Model Setup 'UART_Reciever:module4|recieve_trigger:module5|trigger'
+Slack : -1.005
+TNS   : -43.417
+
+Type  : Fast 1200mV 0C Model Setup 'UART_Reciever:module4|rx_clock:module1|rx_clk'
+Slack : -0.967
+TNS   : -14.003
+
+Type  : Fast 1200mV 0C Model Setup 'ADC_Read:module1|rec_clock:module2|clk'
+Slack : -0.348
+TNS   : -4.125
+
+Type  : Fast 1200mV 0C Model Setup 'UART_Transmitter:module2|tx_clock:module1|tx_clk'
+Slack : 0.297
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'int_clk'
+Slack : 0.178
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'ADC_Read:module1|rec_clock:module2|clk'
+Slack : 0.185
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'UART_Reciever:module4|rx_clock:module1|rx_clk'
+Slack : 0.187
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'UART_Transmitter:module2|tx_clock:module1|tx_clk'
+Slack : 0.187
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'data_comm:module5|comm_clock:comb_4|send'
+Slack : 0.257
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'UART_Reciever:module4|recieve_trigger:module5|trigger'
+Slack : 0.301
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'analog_2_digital:module3|digital_data'
+Slack : -1.214
+TNS   : -1.214
+
+Type  : Fast 1200mV 0C Model Recovery 'UART_Transmitter:module2|bit_counter:module2|enable'
+Slack : -0.462
+TNS   : -0.462
+
+Type  : Fast 1200mV 0C Model Recovery 'UART_Reciever:module4|bit_counter_rx:module2|enable'
+Slack : 0.171
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'UART_Reciever:module4|bit_counter_rx:module2|enable'
+Slack : 0.562
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'UART_Transmitter:module2|bit_counter:module2|enable'
+Slack : 0.842
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'analog_2_digital:module3|digital_data'
+Slack : 1.878
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'int_clk'
+Slack : -3.000
+TNS   : -119.301
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'UART_Reciever:module4|recieve_trigger:module5|trigger'
+Slack : -1.000
+TNS   : -48.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ADC_Read:module1|rec_clock:module2|clk'
+Slack : -1.000
+TNS   : -28.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'UART_Reciever:module4|rx_clock:module1|rx_clk'
+Slack : -1.000
+TNS   : -21.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'data_comm:module5|comm_clock:comb_4|send'
+Slack : -1.000
+TNS   : -15.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'UART_Transmitter:module2|tx_clock:module1|tx_clk'
+Slack : -1.000
+TNS   : -5.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'UART_Reciever:module4|bit_counter_rx:module2|enable'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'UART_Transmitter:module2|bit_counter:module2|enable'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'analog_2_digital:module3|digital_data'
+Slack : -1.000
+TNS   : -1.000
+
+------------------------------------------------------------

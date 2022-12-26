@@ -1,0 +1,24 @@
+module Position_Detection (int_clk, dout, cs, din, reading, read_clk, data_stream, dreading);
+
+	input int_clk, dout;
+	output cs, din, read_clk;
+	output [11:0] reading;
+	
+	//reg [25:0] rx_speed = 26'b01_0111_1101_0111_1000_0100_0000; // @1Hz
+	reg [25:0] rx_speed = 26'b00_0010_0110_0010_0101_1010_0000; // @0.1Hz
+	
+	output data_stream, dreading;
+	
+	reg [11:0] threshold = 12'b0001_1111_1111;
+	
+	wire [7:0] data1;
+	wire [7:0] data2;
+	wire [7:0] recieved_id;
+	
+	ADC_Read module1 (int_clk, dout, cs, din, reading, read_clk);
+	UART_Transmitter module2 (int_clk, send, trigger_id, data1 [7:0], data2 [7:0], data_stream);
+	analog_2_digital module3 (int_clk, reading, dreading, threshold);
+	UART_Reciever module4 (int_clk, rx_speed, dreading, recieved_id, ext_trigger, bit_ID, rx_clk);
+	data_comm module5 (int_clk, ext_trigger, reading, recieved_id, data1 [7:0], data2 [7:0], send, trigger_id);
+
+endmodule

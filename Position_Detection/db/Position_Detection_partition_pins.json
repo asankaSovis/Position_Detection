@@ -1,0 +1,29 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "read_clk",
+					"strict" : false
+				},
+				{
+					"name" : "data_stream",
+					"strict" : false
+				},
+				{
+					"name" : "dreading",
+					"strict" : false
+				},
+				{
+					"name" : "int_clk",
+					"strict" : false
+				},
+				{
+					"name" : "dout",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
