@@ -1,5 +1,5 @@
 Fitter report for Position_Detection
-Sun Dec 25 18:12:15 2022
+Tue Dec 27 17:31:49 2022
 Quartus Prime Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
 
 
@@ -68,7 +68,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Sun Dec 25 18:12:15 2022       ;
+; Fitter Status                      ; Successful - Tue Dec 27 17:31:49 2022       ;
 ; Quartus Prime Version              ; 21.1.1 Build 850 06/23/2022 SJ Lite Edition ;
 ; Revision Name                      ; Position_Detection                          ;
 ; Top-level Entity Name              ; Position_Detection                          ;
@@ -155,13 +155,13 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.03        ;
+; Average used               ; 1.02        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   1.1%      ;
-;     Processors 3-4         ;   1.1%      ;
+;     Processor 2            ;   0.8%      ;
+;     Processors 3-4         ;   0.8%      ;
 +----------------------------+-------------+
 
 
@@ -203,7 +203,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/quartus/project/Position_Detection/output_files/Position_Detection.pin.
+The pin-out file can be found in C:/quartus/project/Position_Detection/Position_Detection/output_files/Position_Detection.pin.
 
 
 +----------------------------------------------------------------------+
@@ -1174,59 +1174,59 @@ Info (332144): No user constrained base clocks found in the design
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
-Info (176353): Automatically promoted node int_clk~input (placed in PIN R8 (CLK15, DIFFCLK_6p)) File: C:/quartus/project/Position_Detection/Position_Detection.v Line: 3
+Info (176353): Automatically promoted node int_clk~input (placed in PIN R8 (CLK15, DIFFCLK_6p)) File: C:/quartus/project/Position_Detection/Position_Detection/Position_Detection.v Line: 12
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G18
-Info (176353): Automatically promoted node UART_Reciever:module4|recieve_trigger:module5|trigger  File: C:/quartus/project/Position_Detection/UART_Reciever.v Line: 42
+Info (176353): Automatically promoted node UART_Reciever:module4|recieve_trigger:module5|trigger  File: C:/quartus/project/Position_Detection/Position_Detection/UART_Reciever.v Line: 51
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
     Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
-        Info (176357): Destination node UART_Reciever:module4|recieve_trigger:module5|trigger~0 File: C:/quartus/project/Position_Detection/UART_Reciever.v Line: 42
-Info (176353): Automatically promoted node ADC_Read:module1|rec_clock:module2|clk  File: C:/quartus/project/Position_Detection/ADC_Read.v Line: 58
+        Info (176357): Destination node UART_Reciever:module4|recieve_trigger:module5|trigger~0 File: C:/quartus/project/Position_Detection/Position_Detection/UART_Reciever.v Line: 51
+Info (176353): Automatically promoted node ADC_Read:module1|rec_clock:module2|clk  File: C:/quartus/project/Position_Detection/Position_Detection/ADC_Read.v Line: 67
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
     Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
-        Info (176357): Destination node read_clk~output File: C:/quartus/project/Position_Detection/Position_Detection.v Line: 4
-Info (176353): Automatically promoted node data_comm:module5|comm_clock:comb_4|send  File: C:/quartus/project/Position_Detection/Data_Comm.v Line: 90
+        Info (176357): Destination node read_clk~output File: C:/quartus/project/Position_Detection/Position_Detection/Position_Detection.v Line: 13
+Info (176353): Automatically promoted node data_comm:module5|comm_clock:comb_4|send  File: C:/quartus/project/Position_Detection/Position_Detection/Data_Comm.v Line: 99
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
-Info (176353): Automatically promoted node UART_Reciever:module4|rx_clock:module1|rx_clk  File: C:/quartus/project/Position_Detection/UART_Reciever.v Line: 124
-    Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
-    Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
-        Info (176357): Destination node UART_Reciever:module4|rx_clock:module1|rx_clk~0 File: C:/quartus/project/Position_Detection/UART_Reciever.v Line: 124
-Info (176353): Automatically promoted node UART_Transmitter:module2|tx_clock:module1|tx_clk  File: C:/quartus/project/Position_Detection/UART_Transmitter.v Line: 88
+Info (176353): Automatically promoted node UART_Reciever:module4|rx_clock:module1|rx_clk  File: C:/quartus/project/Position_Detection/Position_Detection/UART_Reciever.v Line: 133
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
     Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
-        Info (176357): Destination node UART_Transmitter:module2|tx_clock:module1|tx_clk~0 File: C:/quartus/project/Position_Detection/UART_Transmitter.v Line: 88
+        Info (176357): Destination node UART_Reciever:module4|rx_clock:module1|rx_clk~0 File: C:/quartus/project/Position_Detection/Position_Detection/UART_Reciever.v Line: 133
+Info (176353): Automatically promoted node UART_Transmitter:module2|tx_clock:module1|tx_clk  File: C:/quartus/project/Position_Detection/Position_Detection/UART_Transmitter.v Line: 97
+    Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
+    Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
+        Info (176357): Destination node UART_Transmitter:module2|tx_clock:module1|tx_clk~0 File: C:/quartus/project/Position_Detection/Position_Detection/UART_Transmitter.v Line: 97
 Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:00
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:03
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
-Info (170192): Fitter placement operations ending: elapsed time is 00:00:01
+Info (170192): Fitter placement operations ending: elapsed time is 00:00:02
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
     Info (170196): Router estimated peak interconnect usage is 3% of the available device resources in the region that extends from location X21_Y11 to location X31_Y22
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:02
-Info (11888): Total time spent on timing analysis during the Fitter is 0.57 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.64 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
-Info (144001): Generated suppressed messages file C:/quartus/project/Position_Detection/output_files/Position_Detection.fit.smsg
+Info (144001): Generated suppressed messages file C:/quartus/project/Position_Detection/Position_Detection/output_files/Position_Detection.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 5553 megabytes
-    Info: Processing ended: Sun Dec 25 18:12:16 2022
-    Info: Elapsed time: 00:00:08
+    Info: Peak virtual memory: 5545 megabytes
+    Info: Processing ended: Tue Dec 27 17:31:49 2022
+    Info: Elapsed time: 00:00:17
     Info: Total CPU time (on all processors): 00:00:03
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in C:/quartus/project/Position_Detection/output_files/Position_Detection.fit.smsg.
+The suppressed messages can be found in C:/quartus/project/Position_Detection/Position_Detection/output_files/Position_Detection.fit.smsg.
 
 

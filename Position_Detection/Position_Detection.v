@@ -3,7 +3,7 @@ POSITION DETECTION
 Asanka Sovis
 25/12/2022
 
-Accepts 8-bits from the bus and send it via the transmission lane
+Description:...
 */
 
 // Top Level Module

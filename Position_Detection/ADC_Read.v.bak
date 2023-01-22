@@ -1,12 +1,3 @@
-/*
-POSITION DETECTION
-Asanka Sovis
-25/12/2022
-
-Description:...
-*/
-
-// ...
 module ADC_Read (int_clk, dout, cs, din, areading, read_clk);
 
 	input int_clk, dout;

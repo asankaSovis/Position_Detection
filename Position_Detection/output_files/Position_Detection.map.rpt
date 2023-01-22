@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Position_Detection
-Sun Dec 25 18:12:07 2022
+Tue Dec 27 17:31:30 2022
 Quartus Prime Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
 
 
@@ -51,7 +51,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Dec 25 18:12:07 2022       ;
+; Analysis & Synthesis Status        ; Successful - Tue Dec 27 17:31:30 2022       ;
 ; Quartus Prime Version              ; 21.1.1 Build 850 06/23/2022 SJ Lite Edition ;
 ; Revision Name                      ; Position_Detection                          ;
 ; Top-level Entity Name              ; Position_Detection                          ;
@@ -172,17 +172,17 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                             ;
-+----------------------------------+-----------------+------------------------+------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                               ; Library ;
-+----------------------------------+-----------------+------------------------+------------------------------------------------------------+---------+
-; Position_Detection.v             ; yes             ; User Verilog HDL File  ; C:/quartus/project/Position_Detection/Position_Detection.v ;         ;
-; Data_Comm.v                      ; yes             ; User Verilog HDL File  ; C:/quartus/project/Position_Detection/Data_Comm.v          ;         ;
-; UART_Reciever.v                  ; yes             ; User Verilog HDL File  ; C:/quartus/project/Position_Detection/UART_Reciever.v      ;         ;
-; ADC_Read.v                       ; yes             ; User Verilog HDL File  ; C:/quartus/project/Position_Detection/ADC_Read.v           ;         ;
-; UART_Transmitter.v               ; yes             ; User Verilog HDL File  ; C:/quartus/project/Position_Detection/UART_Transmitter.v   ;         ;
-+----------------------------------+-----------------+------------------------+------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                  ; Library ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------+---------+
+; Position_Detection.v             ; yes             ; User Verilog HDL File  ; C:/quartus/project/Position_Detection/Position_Detection/Position_Detection.v ;         ;
+; Data_Comm.v                      ; yes             ; User Verilog HDL File  ; C:/quartus/project/Position_Detection/Position_Detection/Data_Comm.v          ;         ;
+; UART_Reciever.v                  ; yes             ; User Verilog HDL File  ; C:/quartus/project/Position_Detection/Position_Detection/UART_Reciever.v      ;         ;
+; ADC_Read.v                       ; yes             ; User Verilog HDL File  ; C:/quartus/project/Position_Detection/Position_Detection/ADC_Read.v           ;         ;
+; UART_Transmitter.v               ; yes             ; User Verilog HDL File  ; C:/quartus/project/Position_Detection/Position_Detection/UART_Transmitter.v   ;         ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------+---------+
 
 
 +-------------------------------------------------------------+
@@ -389,7 +389,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:02     ;
 +----------------+--------------+
 
 
@@ -399,84 +399,84 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
-    Info: Processing started: Sun Dec 25 18:11:55 2022
+    Info: Processing started: Tue Dec 27 17:31:15 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Position_Detection -c Position_Detection
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file position_detection.v
-    Info (12023): Found entity 1: Position_Detection File: C:/quartus/project/Position_Detection/Position_Detection.v Line: 1
+    Info (12023): Found entity 1: Position_Detection File: C:/quartus/project/Position_Detection/Position_Detection/Position_Detection.v Line: 10
 Info (12021): Found 3 design units, including 3 entities, in source file data_comm.v
-    Info (12023): Found entity 1: data_comm File: C:/quartus/project/Position_Detection/Data_Comm.v Line: 1
-    Info (12023): Found entity 2: read_intensity File: C:/quartus/project/Position_Detection/Data_Comm.v Line: 59
-    Info (12023): Found entity 3: comm_clock File: C:/quartus/project/Position_Detection/Data_Comm.v Line: 86
+    Info (12023): Found entity 1: data_comm File: C:/quartus/project/Position_Detection/Position_Detection/Data_Comm.v Line: 10
+    Info (12023): Found entity 2: read_intensity File: C:/quartus/project/Position_Detection/Position_Detection/Data_Comm.v Line: 68
+    Info (12023): Found entity 3: comm_clock File: C:/quartus/project/Position_Detection/Position_Detection/Data_Comm.v Line: 95
 Info (12021): Found 6 design units, including 6 entities, in source file uart_reciever.v
-    Info (12023): Found entity 1: UART_Reciever File: C:/quartus/project/Position_Detection/UART_Reciever.v Line: 1
-    Info (12023): Found entity 2: recieve_trigger File: C:/quartus/project/Position_Detection/UART_Reciever.v Line: 38
-    Info (12023): Found entity 3: reciever File: C:/quartus/project/Position_Detection/UART_Reciever.v Line: 71
-    Info (12023): Found entity 4: bit_counter_rx File: C:/quartus/project/Position_Detection/UART_Reciever.v Line: 96
-    Info (12023): Found entity 5: rx_clock File: C:/quartus/project/Position_Detection/UART_Reciever.v Line: 120
-    Info (12023): Found entity 6: data_trigger File: C:/quartus/project/Position_Detection/UART_Reciever.v Line: 151
+    Info (12023): Found entity 1: UART_Reciever File: C:/quartus/project/Position_Detection/Position_Detection/UART_Reciever.v Line: 10
+    Info (12023): Found entity 2: recieve_trigger File: C:/quartus/project/Position_Detection/Position_Detection/UART_Reciever.v Line: 47
+    Info (12023): Found entity 3: reciever File: C:/quartus/project/Position_Detection/Position_Detection/UART_Reciever.v Line: 80
+    Info (12023): Found entity 4: bit_counter_rx File: C:/quartus/project/Position_Detection/Position_Detection/UART_Reciever.v Line: 105
+    Info (12023): Found entity 5: rx_clock File: C:/quartus/project/Position_Detection/Position_Detection/UART_Reciever.v Line: 129
+    Info (12023): Found entity 6: data_trigger File: C:/quartus/project/Position_Detection/Position_Detection/UART_Reciever.v Line: 160
 Info (12021): Found 4 design units, including 4 entities, in source file adc_read.v
-    Info (12023): Found entity 1: ADC_Read File: C:/quartus/project/Position_Detection/ADC_Read.v Line: 1
-    Info (12023): Found entity 2: ADC_signalling File: C:/quartus/project/Position_Detection/ADC_Read.v Line: 15
-    Info (12023): Found entity 3: rec_clock File: C:/quartus/project/Position_Detection/ADC_Read.v Line: 55
-    Info (12023): Found entity 4: analog_2_digital File: C:/quartus/project/Position_Detection/ADC_Read.v Line: 75
+    Info (12023): Found entity 1: ADC_Read File: C:/quartus/project/Position_Detection/Position_Detection/ADC_Read.v Line: 10
+    Info (12023): Found entity 2: ADC_signalling File: C:/quartus/project/Position_Detection/Position_Detection/ADC_Read.v Line: 24
+    Info (12023): Found entity 3: rec_clock File: C:/quartus/project/Position_Detection/Position_Detection/ADC_Read.v Line: 64
+    Info (12023): Found entity 4: analog_2_digital File: C:/quartus/project/Position_Detection/Position_Detection/ADC_Read.v Line: 84
 Info (12021): Found 5 design units, including 5 entities, in source file uart_transmitter.v
-    Info (12023): Found entity 1: UART_Transmitter File: C:/quartus/project/Position_Detection/UART_Transmitter.v Line: 1
-    Info (12023): Found entity 2: transmitter File: C:/quartus/project/Position_Detection/UART_Transmitter.v Line: 45
-    Info (12023): Found entity 3: bit_counter File: C:/quartus/project/Position_Detection/UART_Transmitter.v Line: 61
-    Info (12023): Found entity 4: tx_clock File: C:/quartus/project/Position_Detection/UART_Transmitter.v Line: 85
-    Info (12023): Found entity 5: timed_trigger File: C:/quartus/project/Position_Detection/UART_Transmitter.v Line: 117
-Warning (10236): Verilog HDL Implicit Net warning at Position_Detection.v(19): created implicit net for "send" File: C:/quartus/project/Position_Detection/Position_Detection.v Line: 19
-Warning (10236): Verilog HDL Implicit Net warning at Position_Detection.v(19): created implicit net for "trigger_id" File: C:/quartus/project/Position_Detection/Position_Detection.v Line: 19
-Warning (10236): Verilog HDL Implicit Net warning at Position_Detection.v(21): created implicit net for "ext_trigger" File: C:/quartus/project/Position_Detection/Position_Detection.v Line: 21
-Warning (10236): Verilog HDL Implicit Net warning at Position_Detection.v(21): created implicit net for "bit_ID" File: C:/quartus/project/Position_Detection/Position_Detection.v Line: 21
-Warning (10236): Verilog HDL Implicit Net warning at Position_Detection.v(21): created implicit net for "rx_clk" File: C:/quartus/project/Position_Detection/Position_Detection.v Line: 21
-Warning (10236): Verilog HDL Implicit Net warning at UART_Reciever.v(20): created implicit net for "enable" File: C:/quartus/project/Position_Detection/UART_Reciever.v Line: 20
-Warning (10236): Verilog HDL Implicit Net warning at ADC_Read.v(7): created implicit net for "threshold" File: C:/quartus/project/Position_Detection/ADC_Read.v Line: 7
-Warning (10236): Verilog HDL Implicit Net warning at UART_Transmitter.v(19): created implicit net for "tx_clk" File: C:/quartus/project/Position_Detection/UART_Transmitter.v Line: 19
-Warning (10236): Verilog HDL Implicit Net warning at UART_Transmitter.v(20): created implicit net for "enable" File: C:/quartus/project/Position_Detection/UART_Transmitter.v Line: 20
-Critical Warning (10846): Verilog HDL Instantiation warning at Data_Comm.v(20): instance has no name File: C:/quartus/project/Position_Detection/Data_Comm.v Line: 20
-Critical Warning (10846): Verilog HDL Instantiation warning at Data_Comm.v(21): instance has no name File: C:/quartus/project/Position_Detection/Data_Comm.v Line: 21
+    Info (12023): Found entity 1: UART_Transmitter File: C:/quartus/project/Position_Detection/Position_Detection/UART_Transmitter.v Line: 10
+    Info (12023): Found entity 2: transmitter File: C:/quartus/project/Position_Detection/Position_Detection/UART_Transmitter.v Line: 54
+    Info (12023): Found entity 3: bit_counter File: C:/quartus/project/Position_Detection/Position_Detection/UART_Transmitter.v Line: 70
+    Info (12023): Found entity 4: tx_clock File: C:/quartus/project/Position_Detection/Position_Detection/UART_Transmitter.v Line: 94
+    Info (12023): Found entity 5: timed_trigger File: C:/quartus/project/Position_Detection/Position_Detection/UART_Transmitter.v Line: 126
+Warning (10236): Verilog HDL Implicit Net warning at Position_Detection.v(28): created implicit net for "send" File: C:/quartus/project/Position_Detection/Position_Detection/Position_Detection.v Line: 28
+Warning (10236): Verilog HDL Implicit Net warning at Position_Detection.v(28): created implicit net for "trigger_id" File: C:/quartus/project/Position_Detection/Position_Detection/Position_Detection.v Line: 28
+Warning (10236): Verilog HDL Implicit Net warning at Position_Detection.v(30): created implicit net for "ext_trigger" File: C:/quartus/project/Position_Detection/Position_Detection/Position_Detection.v Line: 30
+Warning (10236): Verilog HDL Implicit Net warning at Position_Detection.v(30): created implicit net for "bit_ID" File: C:/quartus/project/Position_Detection/Position_Detection/Position_Detection.v Line: 30
+Warning (10236): Verilog HDL Implicit Net warning at Position_Detection.v(30): created implicit net for "rx_clk" File: C:/quartus/project/Position_Detection/Position_Detection/Position_Detection.v Line: 30
+Warning (10236): Verilog HDL Implicit Net warning at UART_Reciever.v(29): created implicit net for "enable" File: C:/quartus/project/Position_Detection/Position_Detection/UART_Reciever.v Line: 29
+Warning (10236): Verilog HDL Implicit Net warning at ADC_Read.v(16): created implicit net for "threshold" File: C:/quartus/project/Position_Detection/Position_Detection/ADC_Read.v Line: 16
+Warning (10236): Verilog HDL Implicit Net warning at UART_Transmitter.v(28): created implicit net for "tx_clk" File: C:/quartus/project/Position_Detection/Position_Detection/UART_Transmitter.v Line: 28
+Warning (10236): Verilog HDL Implicit Net warning at UART_Transmitter.v(29): created implicit net for "enable" File: C:/quartus/project/Position_Detection/Position_Detection/UART_Transmitter.v Line: 29
+Critical Warning (10846): Verilog HDL Instantiation warning at Data_Comm.v(29): instance has no name File: C:/quartus/project/Position_Detection/Position_Detection/Data_Comm.v Line: 29
+Critical Warning (10846): Verilog HDL Instantiation warning at Data_Comm.v(30): instance has no name File: C:/quartus/project/Position_Detection/Position_Detection/Data_Comm.v Line: 30
 Info (12127): Elaborating entity "Position_Detection" for the top level hierarchy
-Info (12128): Elaborating entity "ADC_Read" for hierarchy "ADC_Read:module1" File: C:/quartus/project/Position_Detection/Position_Detection.v Line: 18
-Info (12128): Elaborating entity "ADC_signalling" for hierarchy "ADC_Read:module1|ADC_signalling:module1" File: C:/quartus/project/Position_Detection/ADC_Read.v Line: 7
-Info (12128): Elaborating entity "rec_clock" for hierarchy "ADC_Read:module1|rec_clock:module2" File: C:/quartus/project/Position_Detection/ADC_Read.v Line: 8
-Info (12128): Elaborating entity "UART_Transmitter" for hierarchy "UART_Transmitter:module2" File: C:/quartus/project/Position_Detection/Position_Detection.v Line: 19
-Warning (10240): Verilog HDL Always Construct warning at UART_Transmitter.v(24): inferring latch(es) for variable "data", which holds its previous value in one or more paths through the always construct File: C:/quartus/project/Position_Detection/UART_Transmitter.v Line: 24
-Info (10041): Inferred latch for "data[0]" at UART_Transmitter.v(24) File: C:/quartus/project/Position_Detection/UART_Transmitter.v Line: 24
-Info (10041): Inferred latch for "data[1]" at UART_Transmitter.v(24) File: C:/quartus/project/Position_Detection/UART_Transmitter.v Line: 24
-Info (10041): Inferred latch for "data[2]" at UART_Transmitter.v(24) File: C:/quartus/project/Position_Detection/UART_Transmitter.v Line: 24
-Info (10041): Inferred latch for "data[3]" at UART_Transmitter.v(24) File: C:/quartus/project/Position_Detection/UART_Transmitter.v Line: 24
-Info (10041): Inferred latch for "data[4]" at UART_Transmitter.v(24) File: C:/quartus/project/Position_Detection/UART_Transmitter.v Line: 24
-Info (10041): Inferred latch for "data[5]" at UART_Transmitter.v(24) File: C:/quartus/project/Position_Detection/UART_Transmitter.v Line: 24
-Info (10041): Inferred latch for "data[6]" at UART_Transmitter.v(24) File: C:/quartus/project/Position_Detection/UART_Transmitter.v Line: 24
-Info (10041): Inferred latch for "data[7]" at UART_Transmitter.v(24) File: C:/quartus/project/Position_Detection/UART_Transmitter.v Line: 24
-Info (12128): Elaborating entity "tx_clock" for hierarchy "UART_Transmitter:module2|tx_clock:module1" File: C:/quartus/project/Position_Detection/UART_Transmitter.v Line: 19
-Info (12128): Elaborating entity "bit_counter" for hierarchy "UART_Transmitter:module2|bit_counter:module2" File: C:/quartus/project/Position_Detection/UART_Transmitter.v Line: 20
-Info (12128): Elaborating entity "transmitter" for hierarchy "UART_Transmitter:module2|transmitter:module3" File: C:/quartus/project/Position_Detection/UART_Transmitter.v Line: 21
-Info (12128): Elaborating entity "analog_2_digital" for hierarchy "analog_2_digital:module3" File: C:/quartus/project/Position_Detection/Position_Detection.v Line: 20
-Info (12128): Elaborating entity "UART_Reciever" for hierarchy "UART_Reciever:module4" File: C:/quartus/project/Position_Detection/Position_Detection.v Line: 21
-Info (12128): Elaborating entity "rx_clock" for hierarchy "UART_Reciever:module4|rx_clock:module1" File: C:/quartus/project/Position_Detection/UART_Reciever.v Line: 19
-Info (12128): Elaborating entity "bit_counter_rx" for hierarchy "UART_Reciever:module4|bit_counter_rx:module2" File: C:/quartus/project/Position_Detection/UART_Reciever.v Line: 20
-Info (12128): Elaborating entity "reciever" for hierarchy "UART_Reciever:module4|reciever:module3" File: C:/quartus/project/Position_Detection/UART_Reciever.v Line: 21
-Warning (10230): Verilog HDL assignment warning at UART_Reciever.v(81): truncated value with size 10 to match size of target (8) File: C:/quartus/project/Position_Detection/UART_Reciever.v Line: 81
-Info (12128): Elaborating entity "data_trigger" for hierarchy "UART_Reciever:module4|data_trigger:module4" File: C:/quartus/project/Position_Detection/UART_Reciever.v Line: 22
-Info (12128): Elaborating entity "recieve_trigger" for hierarchy "UART_Reciever:module4|recieve_trigger:module5" File: C:/quartus/project/Position_Detection/UART_Reciever.v Line: 23
-Info (12128): Elaborating entity "data_comm" for hierarchy "data_comm:module5" File: C:/quartus/project/Position_Detection/Position_Detection.v Line: 22
-Info (12128): Elaborating entity "read_intensity" for hierarchy "data_comm:module5|read_intensity:comb_3" File: C:/quartus/project/Position_Detection/Data_Comm.v Line: 20
-Info (12128): Elaborating entity "comm_clock" for hierarchy "data_comm:module5|comm_clock:comb_4" File: C:/quartus/project/Position_Detection/Data_Comm.v Line: 21
+Info (12128): Elaborating entity "ADC_Read" for hierarchy "ADC_Read:module1" File: C:/quartus/project/Position_Detection/Position_Detection/Position_Detection.v Line: 27
+Info (12128): Elaborating entity "ADC_signalling" for hierarchy "ADC_Read:module1|ADC_signalling:module1" File: C:/quartus/project/Position_Detection/Position_Detection/ADC_Read.v Line: 16
+Info (12128): Elaborating entity "rec_clock" for hierarchy "ADC_Read:module1|rec_clock:module2" File: C:/quartus/project/Position_Detection/Position_Detection/ADC_Read.v Line: 17
+Info (12128): Elaborating entity "UART_Transmitter" for hierarchy "UART_Transmitter:module2" File: C:/quartus/project/Position_Detection/Position_Detection/Position_Detection.v Line: 28
+Warning (10240): Verilog HDL Always Construct warning at UART_Transmitter.v(33): inferring latch(es) for variable "data", which holds its previous value in one or more paths through the always construct File: C:/quartus/project/Position_Detection/Position_Detection/UART_Transmitter.v Line: 33
+Info (10041): Inferred latch for "data[0]" at UART_Transmitter.v(33) File: C:/quartus/project/Position_Detection/Position_Detection/UART_Transmitter.v Line: 33
+Info (10041): Inferred latch for "data[1]" at UART_Transmitter.v(33) File: C:/quartus/project/Position_Detection/Position_Detection/UART_Transmitter.v Line: 33
+Info (10041): Inferred latch for "data[2]" at UART_Transmitter.v(33) File: C:/quartus/project/Position_Detection/Position_Detection/UART_Transmitter.v Line: 33
+Info (10041): Inferred latch for "data[3]" at UART_Transmitter.v(33) File: C:/quartus/project/Position_Detection/Position_Detection/UART_Transmitter.v Line: 33
+Info (10041): Inferred latch for "data[4]" at UART_Transmitter.v(33) File: C:/quartus/project/Position_Detection/Position_Detection/UART_Transmitter.v Line: 33
+Info (10041): Inferred latch for "data[5]" at UART_Transmitter.v(33) File: C:/quartus/project/Position_Detection/Position_Detection/UART_Transmitter.v Line: 33
+Info (10041): Inferred latch for "data[6]" at UART_Transmitter.v(33) File: C:/quartus/project/Position_Detection/Position_Detection/UART_Transmitter.v Line: 33
+Info (10041): Inferred latch for "data[7]" at UART_Transmitter.v(33) File: C:/quartus/project/Position_Detection/Position_Detection/UART_Transmitter.v Line: 33
+Info (12128): Elaborating entity "tx_clock" for hierarchy "UART_Transmitter:module2|tx_clock:module1" File: C:/quartus/project/Position_Detection/Position_Detection/UART_Transmitter.v Line: 28
+Info (12128): Elaborating entity "bit_counter" for hierarchy "UART_Transmitter:module2|bit_counter:module2" File: C:/quartus/project/Position_Detection/Position_Detection/UART_Transmitter.v Line: 29
+Info (12128): Elaborating entity "transmitter" for hierarchy "UART_Transmitter:module2|transmitter:module3" File: C:/quartus/project/Position_Detection/Position_Detection/UART_Transmitter.v Line: 30
+Info (12128): Elaborating entity "analog_2_digital" for hierarchy "analog_2_digital:module3" File: C:/quartus/project/Position_Detection/Position_Detection/Position_Detection.v Line: 29
+Info (12128): Elaborating entity "UART_Reciever" for hierarchy "UART_Reciever:module4" File: C:/quartus/project/Position_Detection/Position_Detection/Position_Detection.v Line: 30
+Info (12128): Elaborating entity "rx_clock" for hierarchy "UART_Reciever:module4|rx_clock:module1" File: C:/quartus/project/Position_Detection/Position_Detection/UART_Reciever.v Line: 28
+Info (12128): Elaborating entity "bit_counter_rx" for hierarchy "UART_Reciever:module4|bit_counter_rx:module2" File: C:/quartus/project/Position_Detection/Position_Detection/UART_Reciever.v Line: 29
+Info (12128): Elaborating entity "reciever" for hierarchy "UART_Reciever:module4|reciever:module3" File: C:/quartus/project/Position_Detection/Position_Detection/UART_Reciever.v Line: 30
+Warning (10230): Verilog HDL assignment warning at UART_Reciever.v(90): truncated value with size 10 to match size of target (8) File: C:/quartus/project/Position_Detection/Position_Detection/UART_Reciever.v Line: 90
+Info (12128): Elaborating entity "data_trigger" for hierarchy "UART_Reciever:module4|data_trigger:module4" File: C:/quartus/project/Position_Detection/Position_Detection/UART_Reciever.v Line: 31
+Info (12128): Elaborating entity "recieve_trigger" for hierarchy "UART_Reciever:module4|recieve_trigger:module5" File: C:/quartus/project/Position_Detection/Position_Detection/UART_Reciever.v Line: 32
+Info (12128): Elaborating entity "data_comm" for hierarchy "data_comm:module5" File: C:/quartus/project/Position_Detection/Position_Detection/Position_Detection.v Line: 31
+Info (12128): Elaborating entity "read_intensity" for hierarchy "data_comm:module5|read_intensity:comb_3" File: C:/quartus/project/Position_Detection/Position_Detection/Data_Comm.v Line: 29
+Info (12128): Elaborating entity "comm_clock" for hierarchy "data_comm:module5|comm_clock:comb_4" File: C:/quartus/project/Position_Detection/Position_Detection/Data_Comm.v Line: 30
 Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Info (13000): Registers with preset signals will power-up high File: C:/quartus/project/Position_Detection/UART_Transmitter.v Line: 36
+Info (13000): Registers with preset signals will power-up high File: C:/quartus/project/Position_Detection/Position_Detection/UART_Transmitter.v Line: 45
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "cs" is stuck at GND File: C:/quartus/project/Position_Detection/Position_Detection.v Line: 4
-    Warning (13410): Pin "din" is stuck at GND File: C:/quartus/project/Position_Detection/Position_Detection.v Line: 4
+    Warning (13410): Pin "cs" is stuck at GND File: C:/quartus/project/Position_Detection/Position_Detection/Position_Detection.v Line: 13
+    Warning (13410): Pin "din" is stuck at GND File: C:/quartus/project/Position_Detection/Position_Detection/Position_Detection.v Line: 13
 Info (286030): Timing-Driven Synthesis is running
 Critical Warning (18061): Ignored Power-Up Level option on the following registers
-    Critical Warning (18010): Register UART_Transmitter:module2|state will power up to High File: C:/quartus/project/Position_Detection/UART_Transmitter.v Line: 36
-    Critical Warning (18010): Register UART_Reciever:module4|state will power up to High File: C:/quartus/project/Position_Detection/UART_Reciever.v Line: 29
-Info (144001): Generated suppressed messages file C:/quartus/project/Position_Detection/output_files/Position_Detection.map.smsg
+    Critical Warning (18010): Register UART_Transmitter:module2|state will power up to High File: C:/quartus/project/Position_Detection/Position_Detection/UART_Transmitter.v Line: 45
+    Critical Warning (18010): Register UART_Reciever:module4|state will power up to High File: C:/quartus/project/Position_Detection/Position_Detection/UART_Reciever.v Line: 38
+Info (144001): Generated suppressed messages file C:/quartus/project/Position_Detection/Position_Detection/output_files/Position_Detection.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Info (21057): Implemented 510 device resources after synthesis - the final resource count might be different
@@ -485,14 +485,14 @@ Info (21057): Implemented 510 device resources after synthesis - the final resou
     Info (21061): Implemented 503 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 21 warnings
     Info: Peak virtual memory: 4789 megabytes
-    Info: Processing ended: Sun Dec 25 18:12:07 2022
-    Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:10
+    Info: Processing ended: Tue Dec 27 17:31:30 2022
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:11
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/quartus/project/Position_Detection/output_files/Position_Detection.map.smsg.
+The suppressed messages can be found in C:/quartus/project/Position_Detection/Position_Detection/output_files/Position_Detection.map.smsg.
 
 

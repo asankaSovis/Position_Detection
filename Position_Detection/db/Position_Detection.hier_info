@@ -1,11 +1,11 @@
 |Position_Detection
 int_clk => int_clk.IN3
 dout => dout.IN1
-cs << ADC_Read:module1.port2
-din << ADC_Read:module1.port3
-read_clk << ADC_Read:module1.port5
-data_stream << UART_Transmitter:module2.port5
-dreading << analog_2_digital:module3.digital_data
+cs <= ADC_Read:module1.port2
+din <= ADC_Read:module1.port3
+read_clk <= ADC_Read:module1.port5
+data_stream <= UART_Transmitter:module2.port5
+dreading <= analog_2_digital:module3.digital_data
 
 
 |Position_Detection|ADC_Read:module1

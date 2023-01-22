@@ -1,12 +1,3 @@
-/*
-POSITION DETECTION
-Asanka Sovis
-25/12/2022
-
-Description:...
-*/
-
-// ...
 module data_comm(int_clk, trigger, adc_reading, led_id, data1, data2, send, trigger_id);
 
 	wire [11:0] one_intensity;

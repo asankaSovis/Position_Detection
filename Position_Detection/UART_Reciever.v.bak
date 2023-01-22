@@ -1,12 +1,3 @@
-/*
-POSITION DETECTION
-Asanka Sovis
-25/12/2022
-
-Description:...
-*/
-
-// ...
 module UART_Reciever (int_clk, rx_speed, din, data, ext_trigger, bit_ID, rx_clk);
 	
 	input [25:0] rx_speed;

@@ -1,12 +1,3 @@
-/*
-POSITION DETECTION
-Asanka Sovis
-25/12/2022
-
-Description:...
-*/
-
-// ...
 module UART_Transmitter (int_clk, trigger, trigger_ID, in_data1, in_data2, dout);
 
 	input int_clk;
