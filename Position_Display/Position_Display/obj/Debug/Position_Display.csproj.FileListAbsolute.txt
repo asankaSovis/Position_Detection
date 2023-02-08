@@ -9,3 +9,14 @@ C:\Users\akash\Documents\Visual Studio 2022\Projects\Position_Detection\Position
 C:\Users\akash\Documents\Visual Studio 2022\Projects\Position_Detection\Position_Display\obj\Debug\Position_Display.csproj.CoreCompileInputs.cache
 C:\Users\akash\Documents\Visual Studio 2022\Projects\Position_Detection\Position_Display\obj\Debug\Position_Detection.exe
 C:\Users\akash\Documents\Visual Studio 2022\Projects\Position_Detection\Position_Display\obj\Debug\Position_Detection.pdb
+C:\quartus\project\Position_Detection\Position_Display\Position_Display\bin\Debug\Position_Detection.exe.config
+C:\quartus\project\Position_Detection\Position_Display\Position_Display\bin\Debug\Position_Detection.exe
+C:\quartus\project\Position_Detection\Position_Display\Position_Display\bin\Debug\Position_Detection.pdb
+C:\quartus\project\Position_Detection\Position_Display\Position_Display\obj\Debug\Position_Display.csproj.AssemblyReference.cache
+C:\quartus\project\Position_Detection\Position_Display\Position_Display\obj\Debug\Position_Display.csproj.SuggestedBindingRedirects.cache
+C:\quartus\project\Position_Detection\Position_Display\Position_Display\obj\Debug\Position_Detection.frmMain.resources
+C:\quartus\project\Position_Detection\Position_Display\Position_Display\obj\Debug\Position_Detection.Properties.Resources.resources
+C:\quartus\project\Position_Detection\Position_Display\Position_Display\obj\Debug\Position_Display.csproj.GenerateResource.cache
+C:\quartus\project\Position_Detection\Position_Display\Position_Display\obj\Debug\Position_Display.csproj.CoreCompileInputs.cache
+C:\quartus\project\Position_Detection\Position_Display\Position_Display\obj\Debug\Position_Detection.exe
+C:\quartus\project\Position_Detection\Position_Display\Position_Display\obj\Debug\Position_Detection.pdb
