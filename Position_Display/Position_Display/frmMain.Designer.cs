@@ -53,6 +53,7 @@
             this.txtUpdate = new System.Windows.Forms.TextBox();
             this.btnCollapse = new System.Windows.Forms.Button();
             this.tmrMain = new System.Windows.Forms.Timer(this.components);
+            this.lblEstimation = new System.Windows.Forms.Label();
             this.stsMain.SuspendLayout();
             this.tlpMain.SuspendLayout();
             this.grpControls.SuspendLayout();
@@ -284,6 +285,7 @@
             this.tlpUpdates.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tlpUpdates.Controls.Add(this.spcText, 0, 1);
             this.tlpUpdates.Controls.Add(this.btnCollapse, 0, 0);
+            this.tlpUpdates.Controls.Add(this.lblEstimation, 0, 2);
             this.tlpUpdates.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tlpUpdates.Location = new System.Drawing.Point(3, 16);
             this.tlpUpdates.Name = "tlpUpdates";
@@ -351,6 +353,16 @@
             this.tmrMain.Enabled = true;
             this.tmrMain.Tick += new System.EventHandler(this.tmrMain_Tick);
             // 
+            // lblEstimation
+            // 
+            this.lblEstimation.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblEstimation.Location = new System.Drawing.Point(3, 421);
+            this.lblEstimation.Name = "lblEstimation";
+            this.lblEstimation.Size = new System.Drawing.Size(225, 99);
+            this.lblEstimation.TabIndex = 2;
+            this.lblEstimation.Text = "Estimation:";
+            this.lblEstimation.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -412,6 +424,7 @@
         private System.Windows.Forms.PictureBox pcbPosition;
         private System.Windows.Forms.ToolStripProgressBar tssProgress;
         private System.Windows.Forms.ToolStripStatusLabel tssEmpty;
+        private System.Windows.Forms.Label lblEstimation;
     }
 }
 

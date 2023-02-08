@@ -17,10 +17,10 @@ void setup( ){
 }
 
 void loop() {
-  driveLED(LED_ONE, OneID);
+  driveLED(LED_ONE, FourID);
   driveLED(LED_TWO, TwoID);
-  driveLED(LED_THREE, ThreeID);
-  driveLED(LED_FOUR, FourID);
+  driveLED(LED_THREE, OneID);
+  driveLED(LED_FOUR, ThreeID);
 }
 
 void driveLED(int LED, byte LEDID) {

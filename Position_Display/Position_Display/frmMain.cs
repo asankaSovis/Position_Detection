@@ -24,6 +24,8 @@ namespace Position_Detection
 
         int position = 0;
         int[] intensities = { 0, 0, 0, 0 };
+        int[] deltaIntensities = { 0, 0, 0, 0 };
+
         DateTime lastUpdate = DateTime.MinValue;
 
         public frmMain()
@@ -95,6 +97,7 @@ namespace Position_Detection
         private void drawPosition()
         {
             Image bmp = null;
+
             if (pcbPosition.Size.Width > pcbPosition.Size.Height)
                 bmp = new Bitmap(pcbPosition.Size.Height, pcbPosition.Size.Height);
             else
@@ -183,6 +186,7 @@ namespace Position_Detection
                             //MessageBox.Show("LED ID: " + ((myByte & 48) >> 4) + " | Intensity: " + intensities[((myByte & 48) >> 4)]);
 
                             intensityUpdate(ledID);
+                            positionEstimation();
 
                             tssProgress.Value = ledID + 1;
                         }
@@ -215,14 +219,14 @@ namespace Position_Detection
 
         private void intensityUpdate(int ledID)
         {
-            txtUpdate.Text += "Intensity Update for LED " + ledID + ": " + intensities[ledID] + "\r\n";
+            txtUpdate.Text = "Intensity Update for LED " + ledID + ": " + intensities[ledID] + "\r\n" + txtUpdate.Text;
 
             drawPosition();
         }
 
         private void positionUpdate()
         {
-            txtUpdate.Text += "Position Update: " + POSITION_NAMES[position] + "\r\n";
+            txtUpdate.Text = "Position Update: " + POSITION_NAMES[position] + "\r\n" + txtUpdate.Text;
 
             drawPosition();
         }
@@ -283,6 +287,18 @@ namespace Position_Detection
             readByte.Enqueue(192);
 
             portDataRecieved(null, null);
+        }
+
+        private void positionEstimation()
+        {
+            lblEstimation.Text = "Estimation" + "\r\n";
+
+            for (int i = 0; i < intensities.Length; i++)
+            {
+                deltaIntensities[i] = intensities[position] - intensities[i];
+
+                lblEstimation.Text += "△ " + i.ToString() + " : " + deltaIntensities[i] + " | ";
+            }
         }
 
         private void pcbImage_Click(object sender, EventArgs e)
