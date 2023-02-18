@@ -48,6 +48,9 @@ An optional LED drive circuit is required if you use high powered LEDs. In this 
 
 The software is optional as any regular connection to the right serial port can read the information that is sent. However, the software is written to decode the signals recieved and to display it in a user friendly way.
 
+> ![Position Detection](https://user-images.githubusercontent.com/46389631/219845935-c341944b-3a6b-41b5-978e-a489076eb2ba.png)
+> Position Detection
+
 *More information will be added...*
 
 `© 2022 Asanka Sovis`
