@@ -4,6 +4,8 @@
 
 ---
 
+*💸 Please consider [donating](https://www.paypal.com/donate/?hosted_button_id=4EWXTWQ9FUFLA) on Paypal to keep this project alive.*
+
 ## 📌 Project Introduction
 
 The idea of this project is to build a system that uses the existing lights to detect the location of a user within an indoor environment. For this, we can use [Visible Light Communication (VLC)](https://en.wikipedia.org/wiki/Visible_light_communication) technology. The basic concept is to have four LEDs transmitting their IDs one after the other at fixed intervals. The reciever can recieve the IDs and identify how the intensity differs between each LED and decide the position of itself within an environment.
